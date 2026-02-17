@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text, FlatList, StyleSheet } from 'react-native';
 import { useContextBanco } from '../provider/ProviderBanco';
 
-const Historico = () => {
+const Historial = () => {
   const { transactions } = useContextBanco();
 
   return (
@@ -27,4 +27,4 @@ const styles = StyleSheet.create({
   transactionItem: { padding: 10, borderBottomWidth: 1, borderBottomColor: '#ccc' },
 });
 
-export default Historico;
+export default Historial;
